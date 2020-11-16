@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+* {
+    box-sizing: border-box;
+    font-family: 
+            'Spoqa Han Sans', 
+            'Spoqa Han Sans JP', 
+            'Sans-serif',
+            'Jeju Myeongjo',
+             serif;
+}
+
+.topBtn {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    background-color: rgba(58, 55, 55, 0.507);
+    border-radius: 30%;
+
+    text-align: center;
+    margin-top: 5px;
+    bottom: 2%;
+    right: 2%;
+    cursor: pointer;
+
+    display: none;
+}
+
+.topimg {
+    position: relative;
+    text-align: center;
+    top:3px;
+    width: 50%;
+}
+
+
+
+.titleh2 {
+    
+    padding-top :160px;
+
+    margin : 0 30%;
+
+    /* border: 1px solid #333; */
+
+
+}
+
+.titleh2 h2{
+    font-family: 'Jeju Myeongjo', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.hr3color {
+    border :none;
+    border:1px solid orange;
+    border-radius: 40%;
+    margin-top: 5px;
+    margin-bottom: 35px;
+
+
+}
+
+.noticetabWrap{
+    text-align: center;
+    
+}
+
+
+table{
+    width: 95%;
+    margin: auto;
+    border-collapse:collapse;
+    font-family: 'ChosunSg';
+}
+
+.noticetabWrap th, td{
+    
+    border-bottom: 1px solid #999; 
+}
+
+th {
+    /* font-size: 8px !important; */
+    padding: 13px;
+    border-top: 2px solid #999;
+}
+
+td {
+    padding: 7px;
+}
+
+button{
+    margin-top: 10px;
+    margin-left: 80%;
+}
+
+.col-p1 {width: 8.33%;}
+.col-p2 {width: 16.66%;} 
+.col-p3 {width: 25%;}
+.col-p4 {width: 33.33%;}
+.col-p5 {width: 41.66%;}
+.col-p6 {width: 50%;}
+.col-p7 {width: 58.33%;}
+.col-p8 {width: 66.66%;}
+.col-p9 {width: 75%;}
+.col-p10 {width: 83.33%;}
+.col-p11 {width: 91.66%;}
+.col-p12 {width: 100%;}
+
+
+@media only screen and (min-width : 768px){
+    /* pc version */
+
+    .titleh2 {
+        margin : 0 40%;
+    }
+
+    .noticeWrap{
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+
+
+}

@@ -1,0 +1,171 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+body{
+  margin:0;
+  color:#909090;
+  background:#fff;
+  font:600 16px/18px 'Jeju Myeongjo', serif !important;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+  width:100vw;
+  margin:100px auto 100px auto;
+  max-width:100vw;
+  min-height:600px;
+  position:relative;
+  background-color: #fff no-repeat center;
+  background-size: cover;
+}
+.login-html{
+  width:100%;
+  height:100%;
+  position:absolute;
+  padding:70px 70px 70px 70px;
+}
+.login-html input,
+.login-html button[type=button],
+.login-html button[type=submit] {
+  width: 100%;
+  max-width:500px;
+  /*margin-left: calc((100vw - 640px) / 2);*/
+  background-color: rgba(0,0,0,.1) !important;
+}
+.login-html input::placeholder{
+  color: #909090;
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+  transform:rotateY(180deg);
+  backface-visibility:hidden;
+  transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.member-form .group .check{
+  display:none;
+}
+.login-html .tab,
+.member-form .group .label,
+.member-form .group .button,
+.member-form .group button[type=button],
+.login-html button[type=submit]{
+  text-transform:uppercase;
+}
+.login-html .tab{
+  font-size:22px;
+  margin-right:15px;
+  padding-bottom:5px;
+  margin:0 15px 10px 0;
+  display:inline-block;
+  border-bottom:2px solid transparent;
+  font-family: 'Jeju Myeongjo', serif !important;
+  font-weight: lighter;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+  color:#000;
+  font-size: 25px !important;
+  border-color:orange !important;
+  font-family: 'Jeju Myeongjo', serif !important;
+  font-weight: lighter;
+}
+.member-form{
+  min-height:345px;
+  position:relative;
+  perspective:1000px;
+  transform-style:preserve-3d;
+}
+.member-form .group{
+  margin-bottom:15px;
+}
+.member-form .group .label,
+.member-form .group .input,
+.member-form .group .button,
+.member-form .group button[type=button],
+.login-html button[type=submit]{
+  width:100%;
+  color:#fff;
+  display:block;
+}
+.member-form .group .input,
+.member-form .group .button,
+.member-form .group button[type=button],
+.login-html button[type=submit]{
+  border:none;
+  padding:15px 20px;
+  border-radius:25px;
+  background:rgba(255,255,255,.1);
+}
+.member-form .group input[type="password"]{
+  -webkit-text-security:circle;
+  font-family: 'Courier New', Courier, monospace;
+}
+.member-form .group .label{
+  color:#aaa;
+  font-size:13px;
+}
+.login-html button[type=submit]{
+  background:orange !important;
+}
+.member-form .group label .icon{
+  width:15px;
+  height:15px;
+  border-radius:2px;
+  position:relative;
+  display:inline-block;
+  background:rgba(255,255,255,.1);
+}
+.member-form .group label .icon:before,
+.member-form .group label .icon:after{
+  content:'';
+  width:10px;
+  height:2px;
+  background:#fff;
+  position:absolute;
+  transition:all .2s ease-in-out 0s;
+}
+.member-form .group label .icon:before{
+  left:3px;
+  width:5px;
+  bottom:6px;
+  transform:scale(0) rotate(0);
+}
+.member-form .group label .icon:after{
+  top:6px;
+  right:0;
+  transform:scale(0) rotate(0);
+}
+.member-form .group .check:checked + label{
+  color:#fff;
+}
+.hr{
+  height:2px;
+  margin:10px 0 10px 0;
+  background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+  text-align:center;
+  color: #000;
+  font-size: 17px !important;
+  font-weight: lighter !important;
+}
+
+@media (min-width : 768px){ /* 화면폭 768px 이상이면 적용 */
+  .login-html input,
+  .member-form .group button[type=button],
+  .login-html button[type=submit] {
+  margin-left: calc((100vw - 650px) / 2);
+  width: 100%;
+  }
+}

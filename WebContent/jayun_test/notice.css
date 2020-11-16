@@ -1,0 +1,53 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+* {
+    box-sizing: border-box;
+    font-family: 
+            'Spoqa Han Sans', 
+            'Spoqa Han Sans JP', 
+            'Sans-serif',
+            'Jeju Myeongjo',
+             serif;
+}
+
+.noticeTitle {
+    margin-top: 170px;
+    margin-bottom: 95px;
+    height: 50px;
+    text-align: center;
+}
+
+.noticeTitle h2 {
+    font-family: 'Jeju Myeongjo', serif; 
+}
+
+.noticeTable{
+    text-align: center;
+}
+
+table{
+    width: 75%;
+    margin: auto;
+    border-collapse:collapse;
+}
+
+.noticeTable th, td{
+    font-family: 'Spoqa Han Sans JP';
+    border-bottom: 1px solid #999; 
+}
+
+th {
+    padding: 14px;
+    border-top: 2px solid #999;
+}
+
+td {
+    padding: 7px;
+}
+
+button{
+    margin-top: 10px;
+    margin-left: 80%;
+}

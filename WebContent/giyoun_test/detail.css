@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@media only screen and (min-width : 768px){
+    /* pc version */
+    .detailWrapper {
+        padding : 0 100px;
+
+    }
+    .jejuImg {
+        padding : 0 150px;
+    }
+}
+
+.topBtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #333;
+    background-color: rgba(184, 164, 164, 0.322);
+    border-radius: 50%;
+
+    text-align: center;
+    margin-top: 5px;
+    bottom: 2%;
+    right: 2%;
+    cursor: pointer;
+}
+
+.detailTxt p {
+    margin : 0px 15px 20px 15px;
+    /* background-color: rosybrown; */
+    line-height: 25px;
+}
+
+
+.hr3 {
+    border: 0;
+    height: 3px;
+    background: #ccc;
+}
+
